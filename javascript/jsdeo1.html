@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h2>Calculator <i class="fas fa-wordpress-simple    "></i></h2>
+    <div>
+        First: <input type="number" name="First" id="First" value="">
+        <!--<button type="button" onclick="sayHello()">Say Hello</button>  -->
+        Second: <input type="number" name="Second" id="Second" value="">
+        <br>
+        <br>
+        <button type="button" onclick="Calculator1()">Addition</button>
+        <button type="button" onclick="Calculator2()">Subtraction</button>
+        <button type="button" onclick="Calculator3()">Multiplication</button>
+        <button type="button" onclick="Calculator4()">Subtraction</button>
+        <h3 id="banner"></h3>
+    </div>
+
+    <script>
+
+        function Calculator1() {
+            //var name = document.getElementById('First').value;
+            var name = parseInt(document.getElementById('First').value);
+           // var name1 = document.getElementById('Second').value;
+            var name1 = parseInt(document.getElementById('Second').value);
+            var output = name+name1;
+            console.log('Name = ' + name + ' and data type of name is ' + typeof name)
+            document.getElementById('banner').innerText = output;
+            name = 1234
+            console.log('Name = ' + name + ' and data type of name is ' + typeof name)
+        }
+
+        function Calculator2() {
+            //var name = document.getElementById('First').value;
+            var name = parseInt(document.getElementById('First').value);
+           // var name1 = document.getElementById('Second').value;
+            var name1 = parseInt(document.getElementById('Second').value);
+            
+            var output = name-name1;
+            console.log('Name = ' + name + ' and data type of name is ' + typeof name)
+            document.getElementById('banner').innerText = output;
+            name = 1234
+            console.log('Name = ' + name + ' and data type of name is ' + typeof name)
+        }
+
+        function Calculator3() {
+            //var name = document.getElementById('First').value;
+            var name = parseInt(document.getElementById('First').value);
+           // var name1 = document.getElementById('Second').value;
+            var name1 = parseInt(document.getElementById('Second').value);
+            
+            var output = name*name1;
+            console.log('Name = ' + name + ' and data type of name is ' + typeof name)
+            document.getElementById('banner').innerText = output;
+            name = 1234
+            console.log('Name = ' + name + ' and data type of name is ' + typeof name)
+        }
+
+        function Calculator4() {
+            //var name = document.getElementById('First').value;
+            var name = parseInt(document.getElementById('First').value);
+           // var name1 = document.getElementById('Second').value;
+            var name1 = parseInt(document.getElementById('Second').value);
+        
+            var output = name/name1;
+            console.log('Name = ' + name + ' and data type of name is ' + typeof name)
+            document.getElementById('banner').innerText = output;
+            name = 1234
+            console.log('Name = ' + name + ' and data type of name is ' + typeof name)
+        }
+    </script>
+</body>
+
+</html>
